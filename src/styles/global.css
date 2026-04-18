@@ -1,6 +1,7 @@
 :root {
     --background: #F6F6F6;
     --blue: #1C1E5F;
+    --blue-light: #368eff;
 }
 
 /* MARK: KEY CSS */
@@ -17,8 +18,14 @@ body {
 
 /* MARK: GENERIC CSS */
 .page-width {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .page-width {
+        width: 80%;
+    }
 }
 
 .spacer-25 {
@@ -42,4 +49,115 @@ header, footer {
 
 header *, footer * {
     font-family: "Josefin Sans", sans-serif !important;
+}
+
+.header-content, .header-content sidebar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+@media (min-width: 767px) {
+    .burger-menu {
+        display: none !important;
+    }
+    .burger-menu .line {
+        transition: 0.3s ease;
+    }
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 24px;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.burger-menu .line {
+    background: white;
+    width: 100%;
+    min-height: 3px;
+    border-radius: 10px;
+}
+
+.burger-menu .line:nth-child(2) {
+    width: 50%;
+}
+
+.burger-menu:hover .line {
+    width: 100% !important;
+}
+
+.burger-menu .line:nth-child(1) {
+    width: 90%;
+}
+
+.burger-menu .line:nth-child(3) {
+    width: 65%;
+}
+
+header .item {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+header .item:hover {
+    color: var(--blue-light) !important;
+}
+
+@media (min-width: 1200px) {
+    header .tab-logo {
+        width: 200px;
+        min-width: 200px;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    header .tab-logo {
+        width: 165px;
+        min-width: 165px;
+        max-width: 165px;
+    }
+}
+
+header .tab-logo {
+    display: block;
+    background: white;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-shadow: 0px 5px 12px #3f3f3f;
+    border-radius: 0 0 20px 20px;
+}
+
+header {
+    height: 150px;
+    max-height: 150px;
+    box-shadow: 0px 5px 12px #777777;
+}
+
+header nav {
+    padding-bottom: 25px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+header .logo {
+    width: 80px;
+    padding-bottom: 25px;
+    min-width: 80px;
+    max-width: 80px;
+}
+
+header sidebar {
+    width: 100%;
 }
