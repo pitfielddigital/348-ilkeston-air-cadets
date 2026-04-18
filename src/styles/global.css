@@ -57,10 +57,13 @@ header *, footer * {
     gap: 50px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1000px) {
     .burger-menu {
         display: none !important;
     }
+}
+
+@media (min-width: 767px) {
     .burger-menu .line {
         transition: 0.3s ease;
     }
@@ -135,6 +138,13 @@ header .tab-logo {
     padding-bottom: 50px;
     box-shadow: 0px 5px 12px #3f3f3f;
     border-radius: 0 0 20px 20px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        height: 130px;
+        max-height: 130px;
+    }
 }
 
 header {
