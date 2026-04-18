@@ -156,7 +156,7 @@ header .item:hover {
 @media (max-width: 400px) {
     header .tab-logo {
         padding: 10px !important;
-        border-radius: 20px;
+        border-radius: 20px !important;
         width: 100px !important;
         min-width: 100px !important;
         max-width: 100px !important;
@@ -209,7 +209,7 @@ header .tab-logo {
     }
     header nav {
         position: fixed;
-        right: -100%;
+        right: -110vw;
         max-width: 300px;
         width: 80%;
         height: 100vh;
