@@ -321,3 +321,12 @@ footer .crest {
         padding: 20px 0;
     }
 }
+
+.copyright {
+    background: #001731;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 21px;
+}
