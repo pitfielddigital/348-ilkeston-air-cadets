@@ -372,9 +372,25 @@ footer .crest {
 }
 
 .banner .content .text {
-    font-size: 50px;
+    font-size: 4vw;
     max-width: 600px;
-    width: 600px;
-    min-width: 600px;
-    color: white;
+    width: 50%;
+    color: #fff;
+}
+
+.banner .content .crest {
+    width: 25%;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+@media (max-width: 767px) {
+    .banner .content .crest {
+        width: 20%;
+        min-width: 0 !important;
+    }
+    .banner .content .text {
+        font-size: 5vw !important;
+        width: 75% !important;
+    }
 }
