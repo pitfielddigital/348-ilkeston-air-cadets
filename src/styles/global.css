@@ -37,4 +37,9 @@ body {
 /* GLOBAL */
 header, footer {
     background: var(--blue);
+    font-family: "Josefin Sans", sans-serif !important;
+}
+
+header *, footer * {
+    font-family: "Josefin Sans", sans-serif !important;
 }
