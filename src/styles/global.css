@@ -72,7 +72,7 @@ header *, footer * {
 .burger-menu {
     display: flex;
     flex-direction: column;
-    width: 30px;
+    width: 4cap;
     height: 24px;
     justify-content: space-between;
     align-items: flex-end;
@@ -81,6 +81,7 @@ header *, footer * {
     outline: none;
     padding: 0;
     cursor: pointer;
+    margin-bottom: 40px;
 }
 
 .burger-menu .line {
@@ -129,6 +130,35 @@ header .item:hover {
         min-width: 165px;
         max-width: 165px;
     }
+    header {
+        width: 100px;
+        min-width: 100px;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    header .tab-logo {
+        width: 125px;
+        min-width: 125px;
+        max-width: 125px;
+        padding: 20px 10px 20px 10px;
+    }
+    header .logo {
+        max-height: 100px !important;
+        padding: 0;
+        min-width: 65px !important;
+        height: 100px !important;
+        min-height: 100px !important;
+        max-width: 65px !important;
+    }
+    .burger-menu {
+        margin-bottom: 10px;
+    }
+    header {
+        height: 100px;
+        max-height: 100px;
+    }
 }
 
 header .tab-logo {
@@ -142,8 +172,29 @@ header .tab-logo {
 
 @media (max-width: 1200px) {
     header {
-        height: 130px;
-        max-height: 130px;
+        height: 130px !important;
+        max-height: 130px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    header:has(.shownav:checked) nav{
+        right: 0 !important;
+    }
+    header nav {
+        position: fixed;
+        right: -100%;
+        max-width: 300px;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        background: #2e2e63;
+        align-items: center;
+        padding: 50px 20px;
+        top: 0;
+        justify-content: flex-start;
+        box-shadow: -4px -1px 20px #252525;
+        transition: 0.3s ease;
     }
 }
 
