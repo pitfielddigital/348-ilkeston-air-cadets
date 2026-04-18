@@ -130,11 +130,6 @@ header .item:hover {
         min-width: 165px;
         max-width: 165px;
     }
-    header {
-        width: 100px;
-        min-width: 100px;
-        max-width: 100px;
-    }
 }
 
 @media (max-width: 767px) {
