@@ -257,7 +257,6 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 50px;
 }
 
 .footer-content .column {
@@ -301,4 +300,24 @@ footer .crest {
     width: 100px;
     min-width: 100px;
     max-width: 100px;
+}
+
+.footer-content p.address {
+    line-height: 20px;
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+    footer .rafac {
+        width: 125px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    footer {
+        padding: 20px 0;
+    }
 }
