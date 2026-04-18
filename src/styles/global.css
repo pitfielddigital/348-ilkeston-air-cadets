@@ -350,3 +350,31 @@ footer .crest {
     display: flex;
     justify-content: space-between;
 }
+
+.banner > img {
+    width: 100%;
+    filter: brightness(0.5);
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .content {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 10%;
+}
+
+.banner .content .text {
+    font-size: 50px;
+    max-width: 600px;
+    width: 600px;
+    min-width: 600px;
+    color: white;
+}
