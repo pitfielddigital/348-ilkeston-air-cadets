@@ -153,6 +153,40 @@ header .item:hover {
     }
 }
 
+@media (max-width: 400px) {
+    header .tab-logo {
+        padding: 10px !important;
+        border-radius: 20px;
+        width: 100px !important;
+        min-width: 100px !important;
+        max-width: 100px !important;
+    }
+
+    header * {
+        margin-bottom: 0 !important;
+    }
+
+    .header-content, .header-content sidebar {
+        gap: 0 !important;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        width: 50px !important;
+        min-width: 50px !important;
+        max-width: 50px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header sidebar {
+        width: 100px !important;
+        max-width: 100px !important;
+        min-width: 100px !important;
+    }
+}
+
 header .tab-logo {
     display: block;
     background: white;
