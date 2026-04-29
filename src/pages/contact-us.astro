@@ -8,8 +8,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="split-view">
                 <div class="half-width contact-col">
                     <h1 class="title">Conntact Us</h1>
-                </div>
-                <div class="half-width contact-col">
                     <p class="page-text">
                         Address<br>
                         348 (Ilkeston) Squadron<br>
@@ -40,6 +38,32 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                         <br>
                         We are part of South and East Midlands Wing. Find out more at : <a href="http://www.semidsatc.org.uk/" class="link">http://www.semidsatc.org.uk/</a>
                     </p>
+                </div>
+                <div class="half-width contact-col">
+                    <form class="defaultform">
+                        <div class="formrow">
+                            <input type="text" placeholder="First Name...">
+                            <input type="text" placeholder="Surname...">
+                        </div>
+                        <input type="email" placeholder="Email Address...">
+                        <textarea placeholder="Message..."></textarea>
+                        <div class="checkbox-label">
+                            <input type="checkbox">
+                            <label>I herby agree that my data entered in the contact form will be stored electronically, and will be processed and used for the purpose of establishing contact. I am aware that I can revoke my consent at any time.</label>
+                        </div>
+                        <input type="submit" value="SEND">
+                    </form>
+                    <div class="spacer-100"></div>
+                    <div class="socials">
+                        <div class="social">
+                            <div class="image"><img src="iamges/facebook.png" alt="Facebook"></div>
+                            <p class="text">348ilkestonaircadets</p>
+                        </div>
+                        <div class="social">
+                            <div class="image"><img src="iamges/instagram.png" alt="Instagram"></div>
+                            <p class="text">348ilkestonaircadets</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="spacer-50"></div>
