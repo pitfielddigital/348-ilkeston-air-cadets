@@ -445,3 +445,13 @@ form.defaultform input[type="submit"] {
     width: 200px;
     transition: 0.3s ease;
 }
+
+form.defaultform textarea {
+    min-width: 100%;
+    max-width: 100%;
+    resize: vertical;
+}
+
+form.defaultform textarea.message {
+    min-height: 275px;
+}
