@@ -394,3 +394,12 @@ footer .crest {
         width: 75% !important;
     }
 }
+
+.split-view {
+    display: flex;
+    gap: 50px;
+}
+
+.floating-image {
+    box-shadow: 0 0 20px #A9A9A9;
+}
