@@ -41,6 +41,11 @@ body {
     min-height: 100px;
 }
 
+p.page-text {
+    font-size: 16px;
+    line-height: 28px;
+}
+
 /* GLOBAL */
 header, footer {
     background: var(--blue);
@@ -408,12 +413,12 @@ footer .crest {
 form.defaultform {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px;
 }
 
 form.defaultform .formrow {
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 form.defaultform input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), form.defaultform textarea {
