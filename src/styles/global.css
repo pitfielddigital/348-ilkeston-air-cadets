@@ -459,11 +459,11 @@ form.defaultform textarea.message {
 .socials {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 75px;
 }
 
 .socials .social {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
 }
