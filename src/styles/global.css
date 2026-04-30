@@ -466,4 +466,5 @@ form.defaultform textarea.message {
     display: flex;
     align-items: center;
     gap: 15px;
+    font-weight: 600;
 }
