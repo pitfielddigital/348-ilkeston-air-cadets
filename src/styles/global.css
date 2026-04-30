@@ -481,3 +481,19 @@ form.defaultform textarea.message {
     justify-content: space-between;
     height: 100%;
 }
+
+.what-we-do-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.what-we-do-layout .item {
+    display: flex;
+    gap: 50px;
+}
+
+.what-we-do-layout .item .image img {
+    max-height: 400px;
+    min-height: 400px;
+}
