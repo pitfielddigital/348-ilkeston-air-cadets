@@ -455,3 +455,15 @@ form.defaultform textarea {
 form.defaultform textarea.message {
     min-height: 275px;
 }
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.socials .social {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
