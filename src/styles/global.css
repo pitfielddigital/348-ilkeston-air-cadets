@@ -468,3 +468,16 @@ form.defaultform textarea.message {
     gap: 15px;
     font-weight: 600;
 }
+
+.formcol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.join-us-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
