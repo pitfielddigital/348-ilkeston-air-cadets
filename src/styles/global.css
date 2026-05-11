@@ -706,3 +706,44 @@ form.defaultform textarea.message {
     }
 }
 
+.meet-the-team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.meet-the-team-grid .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meet-the-team-grid .column.offset {
+    margin-top: 55px;
+}
+
+.meet-the-team-grid .card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #bbbbbb;
+}
+
+.meet-the-team-grid .card img {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .meet-the-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .meet-the-team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .meet-the-team-grid .column.offset {
+        margin-top: 0;
+    }
+}
