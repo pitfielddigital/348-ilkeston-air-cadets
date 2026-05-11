@@ -571,3 +571,11 @@ form.defaultform textarea.message {
 .tile-layout .tile.red-2 {
     background: rgb(66, 2, 0);
 }
+
+.tile-layout .tile.yellow-1 {
+    background: yellow;
+}
+
+.tile-layout .tile.yellow-2 {
+    background: rgb(231, 209, 4);
+}
