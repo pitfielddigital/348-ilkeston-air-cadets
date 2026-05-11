@@ -516,7 +516,11 @@ form.defaultform textarea.message {
     grid-column: span 5;
 }
 
-.tile-layout .tile {display: flex;border-radius: 12px;box-shadow: 0 0 black;}
+.tile-layout .tile {
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 0 7px #a3a3a3;
+}
 
 .tile-layout .tile .image, .tile-layout .tile .content {
     width: 50%;
@@ -530,6 +534,16 @@ form.defaultform textarea.message {
 
 .tile-layout .tile .content {
     padding: 12px;
+}
+
+.tile-layout .tile .content .icon {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
 }
 
 .tile-layout .tile.blue-1 {
@@ -577,5 +591,53 @@ form.defaultform textarea.message {
 }
 
 .tile-layout .tile.yellow-2 {
+    background: rgb(231, 209, 4);
+}
+
+.tile-layout .tile.blue-1 .content .icon {
+    background: blue;
+}
+
+.tile-layout .tile.blue-2 .content .icon {
+    background: rgb(20, 20, 133);
+}
+
+.tile-layout .tile.green-1 .content .icon {
+    background: green;
+}
+
+.tile-layout .tile.green-2 .content .icon {
+    background: rgb(36, 207, 45);
+}
+
+.tile-layout .tile.purple-1 .content .icon {
+    background: purple;
+}
+
+.tile-layout .tile.purple-2 .content .icon {
+    background: rgb(105, 0, 131);
+}
+
+.tile-layout .tile.orange-1 .content .icon {
+    background: orange;
+}
+
+.tile-layout .tile.orange-2 .content .icon {
+    background: rgb(194, 157, 34);
+}
+
+.tile-layout .tile.red-1 .content .icon {
+    background: red;
+}
+
+.tile-layout .tile.red-2 .content .icon {
+    background: rgb(66, 2, 0);
+}
+
+.tile-layout .tile.yellow-1 .content .icon {
+    background: yellow;
+}
+
+.tile-layout .tile.yellow-2 .content .icon {
     background: rgb(231, 209, 4);
 }
