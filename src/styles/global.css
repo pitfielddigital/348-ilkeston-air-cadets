@@ -497,3 +497,37 @@ form.defaultform textarea.message {
     max-height: 400px;
     min-height: 400px;
 }
+
+.tile-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+.tile-layout .tile.large {
+    grid-column: span 7;
+}
+
+.tile-layout .tile.medium {
+    grid-column: span 6;
+}
+
+.tile-layout .tile.small {
+    grid-column: span 5;
+}
+
+.tile-layout .tile {display: flex;border-radius: 12px;box-shadow: 0 0 black;}
+
+.tile-layout .tile .image, .tile-layout .tile .content {
+    width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.tile-layout .tile .image img {
+    width: 100%;
+}
+
+.tile-layout .tile .content {
+    padding: 12px;
+}
