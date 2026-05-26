@@ -887,3 +887,19 @@ main:has( .express-interest) + footer {
     display: block;
     clear: both;
 }
+
+.meet-the-team-grid .card img {
+    transition: 0.3s ease;
+}
+
+.meet-the-team-grid .card:hover img {
+    scale: 1.1;
+}
+
+.tile-layout .tile .image img {
+    transition: 0.3s ease;
+}
+
+.tile-layout .tile:hover .image img {
+    scale: 1.1;
+}
