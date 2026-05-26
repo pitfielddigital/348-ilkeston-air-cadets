@@ -794,10 +794,11 @@ form.defaultform textarea.message {
     width: 200px;
     text-align: center;
     margin-top: 20px;
+    font-weight: 600;
 }
 
 .what-we-do-home-banner .content a:hover {
-    background: #efefef;
+    background: #dcd9ef;
 }
 
 .express-interest {
@@ -845,8 +846,31 @@ form.defaultform textarea.message {
     transition: 0.3s ease;
     width: 200px;
     text-align: center;
+    font-weight: 600;
 }
 
 .express-interest .content a:hover {
-    background: #efefef;
+    background: #dcd9ef;
+}
+
+main:has( .express-interest) + footer {
+    margin-top: 0;
+}
+
+.who-we-are-home-link {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--blue);
+    color: white !important;
+    font-size: 20px;
+    padding: 10px 0;
+    text-decoration: none !important;
+    border-radius: 100px;
+    transition: 0.3s ease;
+}
+
+.who-we-are-home-link:hover {
+    background: #014a97;
 }
