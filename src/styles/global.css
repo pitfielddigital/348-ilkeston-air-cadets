@@ -833,6 +833,7 @@ form.defaultform textarea.message {
 .express-interest .content h1 {
     font-size: 75px;
     margin: 0;
+    font-family: Josefin Sans, sans-serif !important;
 }
 
 .express-interest .content a {
@@ -873,4 +874,16 @@ main:has( .express-interest) + footer {
 
 .who-we-are-home-link:hover {
     background: #014a97;
+}
+
+.welcome-text.floating-image {
+    float: right;
+    width: 40%;
+    margin: 0 0 20px 30px;
+}
+
+.welcome-text::after {
+    content: "";
+    display: block;
+    clear: both;
 }
