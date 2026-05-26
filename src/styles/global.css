@@ -876,7 +876,7 @@ main:has( .express-interest) + footer {
     background: #014a97;
 }
 
-.welcome-text.floating-image {
+.welcome-text .floating-image {
     float: right;
     width: 40%;
     margin: 0 0 20px 30px;
