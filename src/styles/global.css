@@ -734,13 +734,6 @@ form.defaultform textarea.message {
     width: 100%;
 }
 
-@media (max-width: 1000px) and (min-width: 700px) {
-    .meet-the-team-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
 @media (max-width: 700px) {
     .meet-the-team-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -964,10 +957,18 @@ main:has( .express-interest) + footer {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 550px) {
     .express-interest .content a {
         font-size: 14px;
         padding: 10px;
         width: 125px;
+    }
+}
+
+@media (max-width: 550px) {
+    .express-interest .content a {
+        font-size: 11px;
+        padding: 10px;
+        width: 95px;
     }
 }
