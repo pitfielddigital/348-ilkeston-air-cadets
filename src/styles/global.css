@@ -420,6 +420,19 @@ form.defaultform {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    position: relative;
+}
+
+div#result.hidden {
+    display: none;
+}
+
+div#result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
 }
 
 form.defaultform .formrow {
