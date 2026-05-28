@@ -427,6 +427,18 @@ div#result.hidden {
     display: none;
 }
 
+form#form:has( div#result:not(.hidden)):after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000012;
+    display: block;
+    left: 0;
+    top: 0;
+    border-radius: 6px;
+}
+
 div#result {
     position: absolute;
     top: 50%;
