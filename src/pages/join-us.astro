@@ -80,7 +80,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                             <input type="text" placeholder="Phone..." name="adult_phone">
                         </div>
                         <textarea placeholder="Additional Information..." class="message" name="additional_info"></textarea>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I hereby agree that my data entered in the contact form will be stored electronically, and will be processed and used for the purpose of establishing contact. I am aware that I can revoke my consent at any time.</label>
+                        </div>
                         <input type="submit" value="REGISTER">
+                        <div id="result" class="hidden"></div>
                     </form>
                 </div>
                 <div class="half-width joinus-col">
@@ -107,6 +112,46 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     otherInput.required = false;
                     otherInput.value = '';
                 }
+            });
+        });
+
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        result.innerHTML = "Please wait..."
+        result.classList.remove('hidden');
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = json.message;
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                    result.classList.add('hidden');
+                }, 3000);
             });
         });
     </script>
