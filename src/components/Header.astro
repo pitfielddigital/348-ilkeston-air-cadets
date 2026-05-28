@@ -20,16 +20,19 @@
     </div>
     <script>
         const shownav = document.getElementById('shownav');
-        const nav = document.querySelector('header nav');
-        const burger = document.querySelector('label[for="shownav"]');
+const nav = document.querySelector('header nav');
+const burger = document.querySelector('label[for="shownav"]');
 
-        document.body.addEventListener('click', (e) => {
-            if (
-                !nav.contains(e.target) &&
-                !burger.contains(e.target)
-            ) {
-                shownav.checked = false;
-            }
-        });
+document.body.addEventListener('click', (e) => {
+	setTimeout(() => {
+		if (
+			shownav.checked &&
+			!nav.contains(e.target) &&
+			!burger.contains(e.target)
+		) {
+			shownav.checked = false;
+		}
+	});
+});
     </script>
 </header>
