@@ -890,7 +890,7 @@ form.defaultform textarea.message {
     background: #dcd9ef;
 }
 
-main:has( .express-interest) + footer, main:has( .errro-content) + footer {
+main:has( .express-interest) + footer, main:has( .error-content) + footer {
     margin-top: 0;
 }
 
