@@ -29,42 +29,42 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                         <div class="formcol">
                             <label>School Year Group</label>
                             <div class="checkbox-label">
-                                <input type="radio" id="year7" name="yeargroup">
+                                <input type="radio" id="year7" value="Year 7" name="year_group">
                                 <label for="year7">Year 7</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="radio" id="year8" name="yeargroup">
+                                <input type="radio" id="year8" value="Year 8" name="year_group">
                                 <label for="year8">Year 8</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="radio" id="year9" name="yeargroup">
+                                <input type="radio" id="year9" value="Year 9" name="year_group">
                                 <label for="year9">Year 9</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="radio" id="year10" name="yeargroup">
+                                <input type="radio" id="year10" value="Year 10" name="year_group">
                                 <label for="year10">Year 10</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="radio" id="year11" name="yeargroup">
+                                <input type="radio" id="year11" value="Year 11" name="year_group">
                                 <label for="year11">Year 11</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="radio" id="year12" name="yeargroup">
+                                <input type="radio" id="year12" value="Year 12" name="year_group">
                                 <label for="year12">Year 12</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="radio" id="year13" name="yeargroup">
+                                <input type="radio" id="year13" value="Year 13" name="year_group">
                                 <label for="year13">Year 13</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="radio" id="college" name="yeargroup">
+                                <input type="radio" id="college" value="College/Apprenticeship" name="year_group">
                                 <label for="college">College/Apprenticeship</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="radio" id="other" name="yeargroup">
+                                <input type="radio" id="other" value="Other" name="year_group">
                                 <label for="other">Other</label>
                             </div>
-                            <input type="text" placeholder="Please Specify..." disabled>
+                            <input type="text" placeholder="Please Specify..." disabled name="year_group_other">
                         </div>
                         <div class="spacer-50"></div>
                         <h2 class="subtitle">PARENT DETAILS</h2>
@@ -93,4 +93,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             </div>
         </div>
     </div>
+    <script>
+        const otherRadio = document.getElementById('other');
+        const otherInput = document.getElementById('year_group_other');
+
+        document.querySelectorAll('input[name="year_group"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+                if (otherRadio.checked) {
+                    otherInput.disabled = false;
+                    otherInput.required = true;
+                } else {
+                    otherInput.disabled = true;
+                    otherInput.required = false;
+                    otherInput.value = '';
+                }
+            });
+        });
+    </script>
 </BaseLayout>
