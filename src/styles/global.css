@@ -988,4 +988,16 @@ main:has( .express-interest) + footer {
     .half-width.contact-col {
         width: 100% !important;
     }
+    .half-width.joinus-col {
+        width: 100%;
+    }
+    .join-us-images {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    form.defaultform input[type=submit] {
+        margin: 0 auto;
+    }
 }
