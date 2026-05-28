@@ -216,6 +216,7 @@ header .tab-logo {
     }
     header:has(.shownav:checked) .closenav{
         right: 0 !important;
+        opacity: 1;
     }
     header nav {
         position: fixed;
@@ -1013,6 +1014,7 @@ label.closenav {
     z-index: 15;
     background: #00000075;
     transition: 0.3s ease;
-    right: -110vw;
+    right: 110vw;
     top: 0;
+    opacity: 0;
 }
