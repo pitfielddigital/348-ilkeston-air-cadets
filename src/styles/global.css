@@ -1043,3 +1043,8 @@ label.closenav {
     top: 0;
     opacity: 0;
 }
+
+form.defaultform input:not([type=checkbox]):not([type=radio]):not([type=submit]):disabled,
+form.defaultform textarea:disabled {
+    background: #ababab;
+}
