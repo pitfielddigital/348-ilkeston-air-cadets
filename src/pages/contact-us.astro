@@ -41,16 +41,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     </p>
                 </div>
                 <div class="half-width contact-col">
-                    <form class="defaultform">
+                    <form class="defaultform" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="62d68c08-3c4d-40c1-b377-a750fa98f52f">
                         <div class="formrow">
-                            <input type="text" placeholder="First Name...">
-                            <input type="text" placeholder="Surname...">
+                            <input type="text" placeholder="First Name..." name="name" required>
+                            <input type="text" placeholder="Surname..." name="surname">
                         </div>
-                        <input type="email" placeholder="Email Address...">
-                        <textarea placeholder="Message..." class="message"></textarea>
+                        <input type="email" placeholder="Email Address..." name="email" required>
+                        <textarea placeholder="Message..." class="message" name="message" required></textarea>
                         <div class="checkbox-label">
-                            <input type="checkbox">
-                            <label>I herby agree that my data entered in the contact form will be stored electronically, and will be processed and used for the purpose of establishing contact. I am aware that I can revoke my consent at any time.</label>
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I herby agree that my data entered in the contact form will be stored electronically, and will be processed and used for the purpose of establishing contact. I am aware that I can revoke my consent at any time.</label>
                         </div>
                         <input type="submit" value="SEND">
                     </form>
