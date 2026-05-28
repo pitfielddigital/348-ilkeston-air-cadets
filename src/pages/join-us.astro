@@ -12,73 +12,74 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="spacer-50"></div>
             <div class="split-view">
                 <div class="half-width joinus-col">
-                    <form class="defaultform">
+                    <form class="defaultform" action="https://api.web3forms.com/submit" method="POST" id="form">
+                        <input type="hidden" name="access_key" value="cf59f659-1622-4f06-85da-74d6a573b095">
                         <h2 class="subtitle">YOUNG PERSONS DETAILS</h2>
                         <span></span>
                         <div class="formcol">
                             <label>Name</label>
-                            <input type="text" placeholder="First Name...">
-                            <input type="text" placeholder="Surname...">
+                            <input type="text" placeholder="First Name..." name="name">
+                            <input type="text" placeholder="Surname..." name="surname">
                         </div>
                         <div class="formcol">
                             <label>Date of Birth</label>
-                            <input type="date" placeholder="dd/mm/yyyy">
-                            <input type="number" placeholder="Age..." step="1">
+                            <input type="date" placeholder="dd/mm/yyyy" name="dob">
+                            <input type="number" placeholder="Age..." step="1" name="age">
                         </div>
                         <div class="formcol">
                             <label>School Year Group</label>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Year 7</label>
+                                <input type="radio" id="year7" class="yeargroup">
+                                <label for="year7">Year 7</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Year 8</label>
+                                <input type="radio" id="year8" class="yeargroup">
+                                <label for="year8">Year 8</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Year 9</label>
+                                <input type="radio" id="year9" class="yeargroup">
+                                <label for="year9">Year 9</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Year 10</label>
+                                <input type="radio" id="year10" class="yeargroup">
+                                <label for="year10">Year 10</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Year 11</label>
+                                <input type="radio" id="year11" class="yeargroup">
+                                <label for="year11">Year 11</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Year 12</label>
+                                <input type="radio" id="year12" class="yeargroup">
+                                <label for="year12">Year 12</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Year 13</label>
+                                <input type="radio" id="year13" class="yeargroup">
+                                <label for="year13">Year 13</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Year College/Apprenticeship</label>
+                                <input type="radio" id="college" class="yeargroup">
+                                <label for="college">College/Apprenticeship</label>
                             </div>
                             <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label>Other</label>
+                                <input type="radio" id="other" class="yeargroup">
+                                <label for="other">Other</label>
                             </div>
-                            <input type="text" placeholder="Please Specify...">
+                            <input type="text" placeholder="Please Specify..." disabled>
                         </div>
                         <div class="spacer-50"></div>
                         <h2 class="subtitle">PARENT DETAILS</h2>
                         <span></span>
                         <div class="formcol">
                             <label>Name</label>
-                            <input type="text" placeholder="First Name...">
-                            <input type="text" placeholder="Surname...">
+                            <input type="text" placeholder="First Name..." name="parent_name">
+                            <input type="text" placeholder="Surname..." name="parent_surname">
                         </div>
                         <div class="formcol">
                             <label>Contact Details</label>
-                            <input type="text" placeholder="Email Address..." type="email">
-                            <input type="text" placeholder="Phone...">
+                            <input type="text" placeholder="Email Address..." type="email" name="adult_email">
+                            <input type="text" placeholder="Phone..." name="adult_phone">
                         </div>
-                        <textarea placeholder="Additional Information..." class="message"></textarea>
+                        <textarea placeholder="Additional Information..." class="message" name="additional_info"></textarea>
                         <input type="submit" value="REGISTER">
                     </form>
                 </div>
