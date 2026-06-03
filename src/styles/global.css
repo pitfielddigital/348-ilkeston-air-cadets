@@ -1086,8 +1086,17 @@ form.defaultform textarea:disabled {
     font-size: min(20vw, 100px);
 }
 
+@media (min-width: 700px) {
+    .meet-team-mobile {
+        display: none;
+    }
+}
+
 @media (max-width: 700px) {
     .error-content .image {
         max-height: 100vh !important;
+    }
+    .meet-team-desktop {
+        display: none;
     }
 }
