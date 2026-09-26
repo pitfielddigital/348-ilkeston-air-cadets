@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Contact Us" content="Contact 348 (Ilkeston) Squadron RAF Air Cadets. Find our address, parade nights, phone number and contact form.">
+<BaseLayout title="Contact Us" description="Contact 348 (Ilkeston) Squadron RAF Air Cadets. Find our address, parade nights, phone number and contact form.">
     <div class="spacer-50"></div>
     <div class="page-width">
         <div class="contact-content">
@@ -50,8 +50,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                         <input type="email" placeholder="Email Address..." name="email" required>
                         <textarea placeholder="Message..." class="message" name="message" required></textarea>
                         <div class="checkbox-label">
-                            <input type="checkbox" id="consent" name="consent" required>
-                            <label for="consent">I hereby agree that my data entered in the contact form will be stored electronically, and will be processed and used for the purpose of establishing contact. I am aware that I can revoke my consent at any time.</label>
+                            <label>
+                                <input type="checkbox" name="consent" required>
+                                I confirm that I have read and understood the <a href="/privacy-policy">Privacy Policy</a> and agree to the information I have provided being used to respond to my enquiry.
+                            </label>
                         </div>
                         <input type="submit" value="SEND">
                         <div id="result" class="hidden"></div>

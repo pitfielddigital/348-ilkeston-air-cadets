@@ -2,7 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Join Us" content="Interested in joining the RAF Air Cadets? Register your interest with 348 (Ilkeston) Squadron and find out how young people aged 12-20 can get involved.">
+<BaseLayout title="Join Us" description="Interested in joining the RAF Air Cadets? Register your interest with 348 (Ilkeston) Squadron and find out how young people aged 12-20 can get involved.">
     <div class="spacer-50"></div>
     <div class="page-width">
         <div class="contact-content">
@@ -76,13 +76,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                         </div>
                         <div class="formcol">
                             <label>Contact Details</label>
-                            <input type="text" placeholder="Email Address..." type="email" name="adult_email">
+                            <input placeholder="Email Address..." type="email" name="adult_email">
                             <input type="text" placeholder="Phone..." name="adult_phone">
                         </div>
                         <textarea placeholder="Additional Information..." class="message" name="additional_info"></textarea>
                         <div class="checkbox-label">
-                            <input type="checkbox" id="consent" name="consent" required>
-                            <label for="consent">I hereby agree that my data entered in the contact form will be stored electronically, and will be processed and used for the purpose of establishing contact. I am aware that I can revoke my consent at any time.</label>
+                            <label>
+                                <input type="checkbox" name="consent" required>
+                                I confirm that I have read and understood the <a href="/privacy-policy">Privacy Policy</a> and agree to the information I have provided being used to process my expression of interest in joining 348 (Ilkeston) Squadron RAFAC.
+                            </label>
                         </div>
                         <input type="submit" value="REGISTER">
                         <div id="result" class="hidden"></div>
